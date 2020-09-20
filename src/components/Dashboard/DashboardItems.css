@@ -1,0 +1,106 @@
+.text-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.text-wrap > h5 {
+  color: white;
+  font-size: 18px;
+}
+
+.text-wrap > p {
+  color: white;
+}
+
+.img-c {
+  border-radius: 15px;
+}
+
+.container-1:hover {
+  background: #2e2e80;
+  background: -webkit-linear-gradient(top left, #0a6796, #0a6796);
+  background: -moz-linear-gradient(top left, #2e2e80, #09bce8);
+  background: linear-gradient(to bottom right, #2e2e80, #09bce8);
+}
+
+.item {
+  padding: 10px;
+}
+@media only screen and (min-width: 1024px) {
+  /* If the screen size is over 1024px wide. */
+
+  .container-1 {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 8px;
+    width: 65%;
+    /* background-color: blue; */
+    border-radius: 20px;
+    border: 1px solid #444444;
+    transition: transform 0.2s;
+    /* Animation */
+  }
+
+  .container-1:hover {
+    transform: scale(1.04);
+  }
+
+  .parent-1 {
+    display: flex;
+    justify-content: center;
+    min-width: 633px;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  /*If the screen size is atleast 300px wide, but no more than 767px */
+
+  .container-1 {
+    display: flex;
+    margin: 10px;
+    padding: 8px;
+
+    border-radius: 20px;
+    border: 1px solid #444444;
+    transition: transform 0.2s; /* Animation */
+  }
+
+  .container-1:hover {
+    transform: scale(1.02);
+  }
+
+  .parent-1 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* If the screen size is atleast 768px wide, but no more than 1023px */
+
+  .container-1 {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 8px;
+    width: 65%;
+    /* background-color: blue; */
+    border-radius: 20px;
+    border: 1px solid #444444;
+    transition: transform 0.2s;
+    /* Animation */
+  }
+
+  .container-1:hover {
+    transform: scale(1.04);
+  }
+
+  .parent-1 {
+    display: flex;
+    justify-content: center;
+    min-width: 633px;
+  }
+}

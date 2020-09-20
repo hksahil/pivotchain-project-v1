@@ -1,0 +1,48 @@
+.parent {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  height: 100%;
+  background: linear-gradient(
+      -45deg,
+      rgba(8, 16, 28, 0.9),
+      rgba(8, 16, 28, 0.9)
+    ),
+    url(https://www.cyfe.com/wp-content/uploads/2014/02/Cyfe-social-media-dashboard.jpg);
+}
+
+.Dashboard__text {
+  padding: 20px;
+  background: linear-gradient(
+      -45deg,
+      rgba(8, 16, 28, 0.9),
+      rgba(8, 16, 28, 0.9)
+    ),
+    url(https://www.cyfe.com/wp-content/uploads/2014/02/Cyfe-social-media-dashboard.jpg);
+}
+
+.Dashboard__text > h4 {
+  color: white;
+  text-align: center;
+  /* margin-top: 5px; */
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  width: 50px;
+  border-top: 1px solid white;
+  margin: auto;
+  padding: 0;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  /*If the screen size is atleast 300px wide, but no more than 767px */
+  .Dashboard__text > h4 {
+    font-size: 20px !important;
+  }
+}
